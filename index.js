@@ -1,4 +1,3 @@
-let contenedorAviso=document.getElementById("contenedor-aviso");
 let mensaje=document.getElementById("mensaje");
 let boton=document.getElementById("boton-aviso");
 let avisoId=document.getElementById("id-aviso");

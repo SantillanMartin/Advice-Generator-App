@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'Manrope', sans-serif;
 }
 
 :root{
@@ -19,8 +21,8 @@ body{
 
 .main{
     background-color:var(--Dark-Grayish-Blue);
-    width: 40rem;
-    height: 20rem;
+    width: 44rem;
+    height: 25rem;
     border-radius: 0.9rem;
     display: flex;
     align-items: center;
@@ -29,11 +31,10 @@ body{
 .contenedor{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
-    border: solid black;
     width: 75%;
-    height: 90%;
+    height: 100%;
 }
 
 
@@ -44,9 +45,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     transition: 0.2s;
+    position: relative;
+    bottom: -2rem;
 }
 .button-dice:hover{
     box-shadow:0px 1px 15px var(--Neon-Green);
@@ -61,6 +64,50 @@ body{
     height: 50%;
 }
 .mensaje--width{
-    width: 70%;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.mensaje--color{
+    color: white;
+    font-size: 28px;
+}
+
+.advice--color{
+    color: var(--Neon-Green);
+    letter-spacing: 0.3rem;
+}
+
+.divider-mobile{
+    display: none;
+}
+
+
+@media(max-width:768px){
+    .main{
+        width: 80%;
+        height: auto;
+
+    }
+    .divider-desktop{
+        display: none;
+    }
+    .divider-mobile{
+        display: block;
+    }
+}
+
+@media(max-width:500px){
+    .main{
+        width: 90%;
+        height: 30rem;
+    }
+    .button-dice{
+        position: relative;
+    bottom: -3rem;
+    }
 }
